@@ -265,6 +265,8 @@ section {
         0 6px 20px rgba(0,0,0,0.22);
 }
 .about-section {
+    padding-left: 120px;
+    padding-right: 120px;
     padding: 100px 10%;
     min-height: 100vh;
     background-image:
@@ -404,24 +406,40 @@ section {
 }
 /* Cards Section */
 .info-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    /* ALIGN WITH ABOUT CONTENT */
-    max-width: 1320px;
+    display: flex;
 
-    margin: 80px auto 0 auto;
+    gap: 35px;
 
-    padding: 0 120px 100px;
+    margin-top: 80px;
 
-}
-/* Individual Card */
-.info-card {
-    padding: 28px;
+    padding-bottom: 100px;
+
+    /* IMPORTANT */
     width: 100%;
-    border-radius: 24px;
 
-    /* Liquid Glass */
+    justify-content: space-between;
+
+    align-items: stretch;
+}
+
+/* ALL cards */
+.info-card {
+    width: 400px;
+
+    height: 370px;
+
+    padding: 32px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
     background:
         linear-gradient(
             to bottom,
@@ -432,13 +450,22 @@ section {
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 
-    border: 1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.10);
 
     box-shadow:
         0 8px 30px rgba(0,0,0,0.22),
         inset 0 1px 1px rgba(255,255,255,0.08);
+}
 
-    transition: 0.3s ease;
+/* Skills Card Bigger */
+.skills-card {
+    width: 420px;
+}
+
+/* Other Cards */
+.highlights-card,
+.doing-card {
+    width: 330px;
 }
 
 /* Hover */
@@ -453,18 +480,14 @@ section {
 /* Titles */
 .info-card h3 {
     color: #ffffff;
-
+    min-height: 40px;
     margin-bottom: 20px;
 
     font-size: 20px;
 }
-
-/* Paragraph */
 .info-card p,
 .info-card li {
-    color: rgba(255,255,255,0.82);
-
-    line-height: 1.8;
+    line-height: 1.7;
 
     font-size: 15px;
 }
@@ -472,6 +495,9 @@ section {
 /* List */
 .info-card ul {
     padding-left: 18px;
+}
+.info-card ul li {
+    margin-bottom: 10px;
 }
 
 /* Tags */
