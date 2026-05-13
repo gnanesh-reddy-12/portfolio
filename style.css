@@ -23,7 +23,6 @@ header {
     transform: translateX(-50%);
     z-index: 1000;
 }
-@media (max-width: 768px) {
 
 nav {
     display: flex;
@@ -976,5 +975,4 @@ letter-spacing: 0.02em;
             rgba(255,255,255,0.18),
             rgba(255,255,255,0.06)
         );
-}
 }
