@@ -30,6 +30,32 @@ const observer = new IntersectionObserver((entries) => {
 
 hiddenElements.forEach((el) => observer.observe(el));
 
+const mobileMenu = document.getElementById("mobile-menu");
+const navLinks = document.getElementById("nav-links");
+
+mobileMenu.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+        mobileMenu.innerHTML = "✕";
+    } else {
+        mobileMenu.innerHTML = "☰";
+    }
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        mobileMenu.innerHTML = "☰";
+
+    });
+
+});
 
 function callData() {  
     fetch('https://jsonplaceholder.typicode.com/posts')
