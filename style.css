@@ -16,6 +16,11 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 color: #F5F5F0;
 }
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
 header {
     position: fixed;
     top: 18px;
@@ -1097,5 +1102,30 @@ letter-spacing: 0.02em;
     img {
         max-width: 100%;
     }
+    .hero {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.resume,
+.gmail,
+.social {
+    width: 100%;
+    max-width: 100%;
+}
 
 }
