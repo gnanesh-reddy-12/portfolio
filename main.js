@@ -40,7 +40,7 @@ mobileMenu.addEventListener("click", () => {
     if (navLinks.classList.contains("active")) {
         mobileMenu.innerHTML = "✕";
     } else {
-        mobileMenu.innerHTML = "☰";
+        mobileMenu.innerHTML = "⚌";
     }
 
 });
@@ -51,7 +51,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 
         navLinks.classList.remove("active");
 
-        mobileMenu.innerHTML = "☰";
+        mobileMenu.innerHTML = "⚌";
 
     });
 

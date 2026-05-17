@@ -8,7 +8,7 @@ html {
 }
 body {
     margin: 0;
-    background: #87AE73;
+    background: #7ea56b;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,24 +114,24 @@ section {
     font-size: 18px;
     font-weight: 500;
     max-width: 400px;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
 }
 .intro {
-    font-size: 18px; 
+    font-size: 30px; 
     font-weight: 500;   
-    color: rgba(245,245,240,0.88);
+    color: rgba(255,255,255,0.92);
     margin-bottom: 5px;
 }
     .hero-text h1 {
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.95);
     letter-spacing: 0.02em;
     font-size: 32px;
     font-weight: 700;
     margin: 10px 0;
 }
 .role {
-    color: rgba(245,245,240,0.82);
-    font-size: 18px;
+    color: rgba(255,255,255,0.92);
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 25px;   /* increase spacing */
     display: block;
@@ -281,12 +281,12 @@ section {
     min-width: 300px;
 }
 .about-small-title {
-    color: rgba(245,245,240,0.75);
+    color: rgba(255,255,255,0.92);
     font-weight: 600;
     margin-bottom: 10px;
 }
 .about-text p {
-    color: rgba(245,245,240,0.82);
+   color: rgba(255,255,255,0.92);
     line-height: 1.9;
     margin-bottom: 20px;
     font-size: 17px;
@@ -294,7 +294,7 @@ section {
 .about-text h2 {
     font-size: 48px;
     margin-bottom: 15px;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
     letter-spacing: 0.02em;
 }
 .about-line {
@@ -307,20 +307,18 @@ section {
 .about-intro {
     font-size: 22px;
     font-weight: 500;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
     margin-bottom: 25px;
 }
 /* Hidden initially */
 .hidden-left,
 .hidden-right {
-    opacity: 0;
     transition: all 4.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .hidden-left {
     transform: translateX(-120px);
 }
 .show {
-    opacity: 1;
     transform: translateX(0);
 }
 .mini-links {
@@ -445,7 +443,7 @@ section {
 }
 /* Titles */
 .info-card h3 {
-    color: #ffffff;
+    color: rgba(255,255,255,0.92);
     min-height: 40px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -454,7 +452,7 @@ section {
 .info-card li {
     font-size: 17px;
     line-height: 1.8;
-    color: rgba(245,245,240,0.82);
+    color: rgba(255,255,255,0.92);
 }
 /* List */
 .info-card ul {
@@ -477,7 +475,7 @@ section {
     border-radius: 999px;
     background: rgba(255,255,255,0.10);
     border: 1px solid rgba(255,255,255,0.08);
-    color: #f8fafc;
+    color: rgba(255,255,255,0.92);
     font-size: 13px;
 }
 
@@ -485,7 +483,7 @@ section {
 .info-card a {
     display: inline-block;
     margin-top: 20px;
-    color: #f8fafc;
+    color: rgba(255,255,255,0.92);
     text-decoration: none;
     font-weight: 500;
 }
@@ -497,7 +495,7 @@ section {
 
 
 .projects-small-title {
-    color: rgba(245,245,240,0.72);
+    color: rgba(255,255,255,0.92);
     font-size: 14px;
     letter-spacing: 0.28em;
     font-weight: 600;
@@ -509,7 +507,7 @@ section {
     font-size: 72px;
     font-weight: 500;
     letter-spacing: -0.03em;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
     margin-bottom: 22px;
     line-height: 1.05;
 }
@@ -519,7 +517,7 @@ section {
     margin: 0 auto;
     font-size: 20px;
     line-height: 1.8;
-    color: rgba(245,245,240,0.74);
+    color: rgba(255,255,255,0.92);
 }
 .projects-container {
     display: flex;
@@ -562,13 +560,13 @@ section {
 .project-content h3 {
     font-size: 34px;
     font-weight: 600;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
     margin-bottom: 10px;
 }
 
 .project-tagline {
-    font-size: 15px;
-    color: #b7d89f;
+    font-size: 18px;
+    color: rgba(255,255,255,0.92);
     margin-bottom: 18px;
     line-height: 1.6;
 }
@@ -576,7 +574,7 @@ section {
 .project-description {
     font-size: 16px;
     line-height: 1.8;
-    color: rgba(245,245,240,0.76);
+    color: rgba(255,255,255,0.92);
     margin-bottom: 24px;
 }
 
@@ -593,7 +591,7 @@ section {
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.06);
     font-size: 14px;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
 }
 
 .project-buttons {
@@ -607,7 +605,7 @@ section {
     padding: 13px 18px;
     border-radius: 999px;
     text-decoration: none;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
     background:
         linear-gradient(
             to bottom,
@@ -630,20 +628,19 @@ section {
 }
 
 .live-btn {
-    color: #d6f0c2;
+    color: rgba(255,255,255,0.92);
 }
-.experience {
-  padding: 8rem 10%;
-  color: #f5f1e8;
-  font-family: 'Inter', sans-serif;
-}
-
 .section-tag {
-  font-size: 0.8rem;
+  font-size: 2rem;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  opacity: 0.5;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.experience {
+  padding: 8rem 10%;
+  color: rgba(255,255,255,0.95);
+  font-family: 'Inter', sans-serif;
 }
 
 .experience-header {
@@ -663,22 +660,19 @@ section {
 .experience-header h3 {
   font-size: 1rem;
   font-weight: 400;
-  opacity: 0.6;
+  color: rgba(255,255,255,0.92);
   margin-top: 0.5rem;
 }
 
 .experience-header span {
   font-size: 0.95rem;
-  opacity: 0.5;
-  white-space: nowrap;
-  margin-top: 0.5rem;
+  color: rgba(255,255,255,0.92);
 }
 
 .role {
-  font-size: 1rem;
-  opacity: 0.75;
-  margin-bottom: 2rem;
+  color: rgba(255,255,255,0.92);
 }
+
 
 .experience ul {
   list-style: none;
@@ -691,7 +685,7 @@ section {
   padding-left: 1.5rem;
   margin-bottom: 1.2rem;
   line-height: 1.8;
-  color: rgba(245, 241, 232, 0.82);
+  color: rgba(255,255,255,0.92);
 }
 
 .experience ul li::before {
@@ -699,7 +693,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0.6;
+
 }
 
 .skills {
@@ -738,7 +732,7 @@ section {
 }
 .education {
     padding: 8rem 10%;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
 }
 .education-item {
     margin-bottom: 5rem;
@@ -756,19 +750,19 @@ section {
     line-height: 1.2;
 }
 .education-top h3 {
+      color: rgba(255,255,255,0.92);
     font-size: 1rem;
     font-weight: 400;
-    opacity: 0.7;
     margin-top: 0.5rem;
 }
 .education-top span {
     font-size: 0.95rem;
-    opacity: 0.5;
     white-space: nowrap;
 }
 .education-location {
+      color: rgba(255,255,255,0.92);
     font-size: 0.95rem;
-    opacity: 0.55;
+    
 }
 @media (max-width: 768px) {
     .education {
@@ -785,7 +779,7 @@ section {
 .contact {
     padding: 10rem 10%;
     text-align: center;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
 }
 .contact h2 {
     font-size: 4rem;
@@ -794,11 +788,11 @@ section {
     margin-bottom: 1.5rem;
 }
 .contact-text {
+      color: rgba(255,255,255,0.92);
     max-width: 650px;
     margin: 0 auto;
     font-size: 1.1rem;
     line-height: 1.9;
-    opacity: 0.75;
 }
 .contact-links {
     margin-top: 3rem;
@@ -811,7 +805,7 @@ section {
     padding: 0.9rem 1.5rem;
     border-radius: 999px;
     text-decoration: none;
-    color: #F5F5F0;
+    color: rgba(255,255,255,0.92);
     background:
         linear-gradient(
             to bottom,
@@ -864,7 +858,7 @@ section {
     .mobile-menu {
         display: block;
         font-size: 2rem;
-        color: white;
+        color: rgba(255,255,255,0.92);
         cursor: pointer;
         z-index: 3000;
     }
@@ -877,10 +871,11 @@ section {
         background: #87AE73;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: flex-start;
-        padding-left: 3rem;
-        gap: 2.5rem;
+        justify-content: flex-start;
+        padding-top: 120px;
+        padding-left: 2rem;
+        gap: 1.6rem;
         transition: 0.45s ease;
         z-index: 2500;
     }
@@ -888,9 +883,9 @@ section {
         right: 0;
     }
     .nav-links a {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 500;
-        color: white;
+        color: rgba(255,255,255,0.92);
         padding: 0;
         background: none;
     }
