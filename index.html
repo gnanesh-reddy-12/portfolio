@@ -11,11 +11,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <body>
     <!-- Navbar -->
     <header>
+    <button type="button" class="mobile-menu" id="mobile-menu" aria-label="Open menu" aria-expanded="false">
+        <span class="mobile-menu-icon" aria-hidden="true">⚌</span>
+    </button>
      <nav>
-    <div class="mobile-menu" id="mobile-menu">
-    ⚌
-</div>
-
 <div class="nav-links" id="nav-links">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -112,11 +111,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
         </div>
     </div>
-    <section class="info-cards">
+    <section class="info-cards" aria-label="Skills and highlights">
+
+    <div class="info-cards-marquee">
+    <div class="info-cards-track">
 
     <!-- Skills -->
     <div class="info-card skills-card">
-
         <h3>💻 Skills</h3>
 
         <div class="skill-tags">
@@ -149,7 +150,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <ul>
             <li>Reduced manual effort by 40%</li>
             <li>Developed a full-stack auction platform</li>
-            <li>Solved 200+ DSA problems</li>
             <li>Strong problem-solving skills</li>
         </ul>
 
@@ -175,6 +175,53 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
         <a href="#contact">Let's connect →</a>
 
+    </div>
+
+    <!-- Duplicate set for seamless loop -->
+    <div class="info-card skills-card info-card-duplicate" aria-hidden="true">
+        <h3>💻 Skills</h3>
+        <div class="skill-tags">
+            <span>Java</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+            <span>React</span>
+            <span>Flask</span>
+            <span>Git</span>
+            <span>Machine Learning</span>
+        </div>
+        <a href="#" tabindex="-1">View all skills →</a>
+    </div>
+
+    <div class="info-card highlights-card info-card-duplicate" aria-hidden="true">
+        <h3>🏆 Key Highlights</h3>
+        <ul>
+            <li>Reduced manual effort by 40%</li>
+            <li>Developed a full-stack auction platform</li>
+            <li>Solved 200+ DSA problems</li>
+            <li>Strong problem-solving skills</li>
+        </ul>
+        <a href="#projects" tabindex="-1">View my projects →</a>
+    </div>
+
+    <div class="info-card doing-card info-card-duplicate" aria-hidden="true">
+        <h3>🚀 What I'm Doing</h3>
+        <p>
+            I'm currently exploring advanced Machine Learning techniques
+            and building impactful web applications.
+        </p>
+        <p>
+            I love learning new tools and technologies that help me
+            create better solutions.
+        </p>
+        <a href="#contact" tabindex="-1">Let's connect →</a>
+    </div>
+
+    </div>
     </div>
 
 </section>
