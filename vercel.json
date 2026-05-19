@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/files/Gnanesh_Reddy_Resume.pdf",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
