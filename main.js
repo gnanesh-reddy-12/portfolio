@@ -8,6 +8,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+document.getElementById("resume-link").href =
+"./files/Gnanesh_Reddy_Resume.pdf?v=" + new Date().getTime();
+
 const hiddenElements = document.querySelectorAll(
     ".hidden-left, .hidden-right"
 );
