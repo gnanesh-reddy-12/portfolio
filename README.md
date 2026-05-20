@@ -11,9 +11,7 @@ Modern developer portfolio built using HTML, CSS, and JavaScript.
 https://portfolio-nine-lyart-llqwz3won9.vercel.app/
 
 ## Features
-- Apple Inspired UI
 - Responsive Design
-- Glassmorphism Effects
 - Smooth Animations
 - Mobile Navigation
 - Modern Project Showcase
@@ -26,10 +24,3 @@ https://portfolio-nine-lyart-llqwz3won9.vercel.app/
 
 ## About
 This portfolio showcases my projects, skills, experience, and passion for building modern software solutions and AI-driven applications.
-## Preview
-
-### Desktop View
-![Desktop Preview](./images/desktop.png)
-
-### Mobile View
-![Mobile Preview](./images/mobile.png)
