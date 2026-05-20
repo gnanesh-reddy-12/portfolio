@@ -392,7 +392,7 @@ section {
 /* Hidden initially */
 .hidden-left,
 .hidden-right {
-    transition: all 4.8s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: all 3.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .hidden-left {
     transform: translateX(-120px);
