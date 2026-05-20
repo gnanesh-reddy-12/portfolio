@@ -1,6 +1,6 @@
 # Gnanesh Reddy Portfolio
 
-Modern Apple-inspired developer portfolio built using HTML, CSS, and JavaScript.
+Modern developer portfolio built using HTML, CSS, and JavaScript.
 
 ## Live Website
 https://portfolio-nine-lyart-llqwz3won9.vercel.app/
