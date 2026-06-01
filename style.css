@@ -160,21 +160,25 @@ section {
     color: #FFFFFF;         
 }
 .hero {
-    height: 100vh;              /* full screen */
-    padding-top: 80px;          /* pushes content below navbar */
+    min-height: 90vh;
+    padding: 100px 5% 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     background-size: cover;
     background-position: center;
 }
 .hero-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 60px;
-    max-width: 1200px;
+    max-width: 900px;
     width: 100%;
+    margin: 0 auto;
 }
 .hero-image img {
     width: 250px;
@@ -341,17 +345,17 @@ section {
         0 6px 20px rgba(0,0,0,0.22);
 }
 .about-section {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding: 100px 10%;
-    min-height: 100vh;
+    padding: 100px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .about-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 60px;
     flex-wrap: wrap;
 }
@@ -611,9 +615,10 @@ section {
     font-weight: 500;
 }
 .projects-heading {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 40px auto 50px;
+    padding: 0 5%;
 }
 
 
@@ -637,7 +642,7 @@ section {
 
 .projects-subtitle {
     max-width: 720px;
-    margin: 0 auto;
+    margin: 0;
     font-size: 20px;
     line-height: 1.8;
     color: rgba(255,255,255,0.92);
@@ -646,16 +651,24 @@ section {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    margin: 0 auto;
     margin-top: 100px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 5%;
 }
 
 .project-showcase {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 80px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.project-left,
+.project-right {
+    min-width: 0;
 }
 
 .project-left {
@@ -1128,24 +1141,75 @@ section {
         max-width: 100%;
     }
     .hero {
-    padding-left: 24px;
-    padding-right: 24px;
+        height: auto !important;
+        padding: 100px 5% 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .hero-content {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    .buttons {
+        width: 100%;
+    }
+    .resume,
+    .gmail,
+    .social {
+        width: 100%;
+        max-width: 100%;
+    }
+ 
+/* Force sections to flow vertically and disable marquee on wide viewports */
+.about-section {
+    min-height: auto !important;
+    padding: 60px 10% !important;
+}
+.info-cards-track {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    animation: none !important;
+    gap: 28px !important;
+}
+.info-card, .highlights-card {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    flex: none !important;
+}
+}
+
+/* Desktop override: keep hero/about/projects aligned inside a center container */
+.hero {
+    height: auto !important;
+    padding: 100px 5% 60px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
 }
 .hero-content {
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 900px !important;
+    width: 100% !important;
 }
-.hero-text {
-    width: 100%;
+.about-section {
+    padding: 100px 5% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
 }
-.buttons {
-    width: 100%;
+.projects-showcase {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 5% !important;
 }
-.resume,
-.gmail,
-.social {
-    width: 100%;
-    max-width: 100%;
-}
+.project-showcase {
+    justify-content: flex-start !important;
 }
