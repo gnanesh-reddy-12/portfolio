@@ -199,23 +199,23 @@ section {
     color: #FFFFFF;
 }
 .intro {
-    font-size: 30px; 
+    font-size: 16px; 
     font-weight: 500;   
     color: #FFFFFF;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
     .hero-text h1 {
     color: #FFFFFF;
     letter-spacing: 0.02em;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
     margin: 10px 0;
 }
 .role {
     color: #A3B8B8;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
-    margin-bottom: 25px;   /* increase spacing */
+    margin-bottom: 25px;
     display: block;
 }
 .buttons {
@@ -344,13 +344,15 @@ section {
         0 6px 20px rgba(0,0,0,0.22);
 }
 .about-section {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding: 100px 10%;
-    min-height: 100vh;
+    padding: 60px 10%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.section-heading{
+    display:flex;
+    align-items:center;
+    gap:16px;
 }
 .about-container {
     display: flex;
@@ -366,18 +368,20 @@ section {
     color: rgba(255,255,255,0.92);
     font-weight: 600;
     margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
 }
 .about-text p {
-   color: rgba(255,255,255,0.92);
-    line-height: 1.9;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-.about-text h2 {
-    font-size: 48px;
-    margin-bottom: 15px;
     color: rgba(255,255,255,0.92);
-    letter-spacing: 0.02em;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+.about-text h2{
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 .about-line {
     width: 80px;
@@ -387,7 +391,7 @@ section {
     margin-bottom: 25px;
 }
 .about-intro {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     color: rgba(255,255,255,0.92);
     margin-bottom: 25px;
@@ -469,65 +473,118 @@ section {
     transform: scale(1.12);
 }
 
-.info-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 50px;
+.about-layout{
+    display:grid;
+    grid-template-columns:1fr 1.6fr;
+    gap:80px;
 }
 
-.info-cards-marquee,
-.info-cards-track {
-    display: contents;
+.about-right{
+    display:flex;
+    flex-direction:column;
 }
 
-.info-card {
-    background: #213737;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 24px;
-    padding: 30px;
-    min-height: 340px;
-
-    display: flex;
-    flex-direction: column;
+.skills-section h3,
+.highlights-section h3,
+.doing-section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.2;
 }
 
-.info-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    color: #FFFFFF;
+.about-divider{
+    height:1px;
+    background:rgba(255,255,255,0.12);
+    margin:35px 0;
 }
 
-.info-card p,
-.info-card li {
-    color: #FFFFFF;
-    line-height: 1.8;
+.bottom-sections{
+    display:grid;
+    grid-template-columns:1.2fr 1px 0.8fr;
+    gap:50px;
+}
+
+.vertical-divider{
+    background:rgba(255,255,255,0.12);
+}
+
+.highlights-section ul{
+    list-style:none;
+    padding:0;
+}
+
+.highlights-section li {
+    margin-bottom: 14px;
+    line-height: 1.7;
     font-size: 16px;
 }
 
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.highlights-section li::before{
+    content:"✓";
+    color:#4EFFF3;
+    margin-right:12px;
+}
+
+.doing-section p {
+    margin-bottom: 18px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:25px;
 }
 
 .skill-tags span {
-    background: rgba(78,255,243,0.12);
-    border: 1px solid rgba(78,255,243,0.20);
-    color: #FFFFFF;
-    padding: 8px 14px;
+    padding: 10px 20px;
     border-radius: 999px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.12),
+        rgba(255, 255, 255, 0.03)
+    );
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(78, 255, 243, 0.4);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-.info-card a {
-    margin-top: auto;
-    color: #4EFFF3;
-    text-decoration: none;
+.skill-tags span:hover {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.16),
+        rgba(255, 255, 255, 0.06)
+    );
+    border-color: rgba(78, 255, 243, 0.6);
+    transform: translateY(-2px);
 }
+
+@media(max-width:768px){
+
+    .about-layout{
+        grid-template-columns:1fr;
+    }
+
+    .bottom-sections{
+        grid-template-columns:1fr;
+    }
+
+    .vertical-divider{
+        display:none;
+    }
+
+}
+
 .projects-heading {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 
@@ -541,12 +598,12 @@ section {
 }
 
 .projects-heading h2 {
-    font-size: 72px;
-    font-weight: 500;
-    letter-spacing: -0.03em;
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     color: rgba(255,255,255,0.92);
     margin-bottom: 22px;
-    line-height: 1.05;
+    line-height: 1.1;
 }
 
 .projects-subtitle {
@@ -560,7 +617,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin-top: 100px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 10%;
 }
 
 .project-showcase {
@@ -568,7 +629,8 @@ section {
     align-items: flex-start;
     justify-content: space-between;
     gap: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .project-left,
@@ -592,22 +654,22 @@ section {
 }
 
 .project-showcase h3 {
-    font-size: 42px;
+    font-size: 36px;
     margin-bottom: 14px;
     color: #FFFFFF;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .project-tagline {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.7;
     color: #A3B8B8;
     max-width: 420px;
 }
 
 .project-description {
-    font-size: 18px;
-    line-height: 2;
+    font-size: 16px;
+    line-height: 1.8;
     color: #FFFFFF;
     margin-bottom: 35px;
 }
@@ -656,27 +718,61 @@ section {
 
 @media (max-width: 768px) {
 
+    .projects-showcase {
+        gap: 24px;
+    }
+
     .project-showcase {
         flex-direction: column;
-        gap: 35px;
+        gap: 16px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .project-left,
+    .project-right {
+        width: 100%;
+        min-width: unset;
     }
 
     .project-showcase h3 {
-        font-size: 2.3rem;
+        font-size: 24px;
+        margin-bottom: 8px;
+        line-height: 1.3;
     }
 
     .project-tagline {
-        font-size: 17px;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 12px;
     }
 
     .project-description {
-        font-size: 16px;
-        line-height: 1.9;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    .project-tech {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .project-tech span {
+        padding: 8px 16px;
+        font-size: 13px;
     }
 
     .project-buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-btn {
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 14px;
+        text-align: center;
     }
 
 }.section-tag {
@@ -687,7 +783,7 @@ section {
 }
 
 .experience {
-  padding: 8rem 10%;
+  padding: 60px 10%;
   color: rgba(255,255,255,0.95);
   font-family: 'Inter', sans-serif;
 }
@@ -701,7 +797,7 @@ section {
 }
 
 .experience-header h2 {
-  font-size: 2.5rem;
+  font-size: 36px;
   font-weight: 600;
   line-height: 1.1;
 }
@@ -780,11 +876,11 @@ section {
   }
 }
 .education {
-    padding: 8rem 10%;
+    padding: 60px 10%;
     color: rgba(255,255,255,0.92);
 }
 .education-item {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .education-top {
     display: flex;
@@ -794,7 +890,7 @@ section {
     margin-bottom: 0.8rem;
 }
 .education-top h2 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 600;
     line-height: 1.2;
 }
@@ -826,22 +922,22 @@ section {
     }
 }
 .contact {
-    padding: 10rem 10%;
+    padding: 60px 10%;
     text-align: center;
     color: rgba(255,255,255,0.92);
 }
 .contact h2 {
-    font-size: 4rem;
+    font-size: 52px;
     font-weight: 600;
     line-height: 1.1;
     margin-bottom: 1.5rem;
 }
 .contact-text {
-      color: rgba(255,255,255,0.92);
+    color: rgba(255,255,255,0.92);
     max-width: 650px;
     margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.9;
+    font-size: 16px;
+    line-height: 1.8;
 }
 .contact-links {
     margin-top: 3rem;
@@ -1000,7 +1096,6 @@ section {
     }
     .hero-content,
     .about-container,
-    .info-cards,
     .projects-container,
     .experience-header,
     .education-top,
@@ -1011,14 +1106,6 @@ section {
     .about-card {
         width: 100%;
         max-width: 100%;
-    }
-    .info-cards{
-        grid-template-columns:1fr;
-    }
-
-    .info-card{
-        width:100%;
-        min-height:auto;
     }
     img {
         max-width: 100%;
@@ -1045,50 +1132,46 @@ section {
     max-width: 100%;
 }
  
-/* Force sections to flow vertically and disable marquee on wide viewports */
-.about-section {
-    min-height: auto !important;
-    padding: 60px 10% !important;
-}
-.info-cards-track {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    width: 100% !important;
-    animation: none !important;
-    gap: 28px !important;
-}
-.info-card, .highlights-card {
-    width: 100% !important;
-    max-width: none !important;
-    height: auto !important;
-    flex: none !important;
-}
+    .about-layout{
+        grid-template-columns:1fr;
+    }
+
+    .bottom-sections{
+        grid-template-columns:1fr;
+    }
+
+    .vertical-divider{
+        display:none;
+    }
+
 }
 
 /* Desktop override: keep hero/about/projects aligned inside a center container */
+/* Desktop override */
+
 .hero {
     height: auto !important;
-    padding: 100px 5% 60px !important;
-    max-width: 1200px !important;
+    padding: 120px 5% 80px !important;
+    max-width: 1500px !important;
     margin: 0 auto !important;
 }
+
 .hero-content {
     justify-content: center !important;
     align-items: center !important;
-    max-width: 900px !important;
+    max-width: 1200px !important;
     width: 100% !important;
 }
+
 .about-section {
-    padding: 100px 5% !important;
-    max-width: 1200px !important;
+    width: 100% !important;
+    max-width: 1500px !important;
     margin: 0 auto !important;
+    padding: 120px 60px !important;
 }
+
 .projects-showcase {
-    max-width: 1200px !important;
+    max-width: 1500px !important;
     margin: 0 auto !important;
-    padding: 0 5% !important;
-}
-.project-showcase {
-    justify-content: flex-start !important;
+    padding: 0 60px !important;
 }
