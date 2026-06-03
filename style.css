@@ -468,150 +468,61 @@ section {
 .gmail-icon:hover img {
     transform: scale(1.12);
 }
-/* Cards Section — continuous right-to-left marquee */
+
 .info-cards {
-    width: 100%;
-    margin-top: 55px;
-    padding-bottom: 60px;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
 }
 
-.info-cards-marquee {
-    overflow: hidden;
-    width: 100%;
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        #000 6%,
-        #000 94%,
-        transparent
-    );
-    -webkit-mask-image: linear-gradient(
-        to right,
-        transparent,
-        #000 6%,
-        #000 94%,
-        transparent
-    );
-}
-
+.info-cards-marquee,
 .info-cards-track {
-    display: flex;
-    align-items: stretch;
-    gap: 28px;
-    width: max-content;
-    animation: info-cards-scroll 45s linear infinite;
-    will-change: transform;
-}
-
-.info-cards-track:hover {
-    animation-play-state: paused;
-}
-
-@keyframes info-cards-scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-50% - 14px));
-    }
+    display: contents;
 }
 
 .info-card {
-    flex: 0 0 340px;
-    width: 340px;
-    height: 340px;
-    padding: 28px;
-    border-radius: 24px;
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(255,255,255,0.14),
-            rgba(255,255,255,0.06)
-        );
-    backdrop-filter: blur(22px);
+    background: #213737;
     border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+    padding: 30px;
+    min-height: 340px;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.highlights-card {
-    flex: 0 0 380px;
-    width: 380px;
-}
-
-/* Hover */
-.info-card:hover {
-    transform: translateY(-6px);
-    box-shadow:
-        0 12px 35px rgba(255,255,255,0.08),
-        0 8px 25px rgba(0,0,0,0.25);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .info-cards-track {
-        animation: none;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .info-card-duplicate {
-        display: none;
-    }
-
-    .info-cards-marquee {
-        mask-image: none;
-        -webkit-mask-image: none;
-    }
-}
-/* Titles */
 .info-card h3 {
-    color: rgba(255,255,255,0.92);
-    min-height: 40px;
+    font-size: 1.6rem;
     margin-bottom: 20px;
-    font-size: 20px;
+    color: #FFFFFF;
 }
+
 .info-card p,
 .info-card li {
-    font-size: 17px;
+    color: #FFFFFF;
     line-height: 1.8;
-    color: rgba(255,255,255,0.92);
-}
-/* List */
-.info-card ul {
-    padding-left: 18px;
-}
-.info-card ul li {
-    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-/* Tags */
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-/* Skill Tag */
 .skill-tags span {
+    background: rgba(78,255,243,0.12);
+    border: 1px solid rgba(78,255,243,0.20);
+    color: #FFFFFF;
     padding: 8px 14px;
     border-radius: 999px;
-    background: rgba(255,255,255,0.10);
-    border: 1px solid rgba(255,255,255,0.08);
-    color: rgba(255,255,255,0.92);
-    font-size: 13px;
 }
 
-/* Links */
 .info-card a {
-    display: inline-block;
-    margin-top: 20px;
-    color: rgba(255,255,255,0.92);
+    margin-top: auto;
+    color: #4EFFF3;
     text-decoration: none;
-    font-weight: 500;
 }
 .projects-heading {
     text-align: center;
@@ -1101,33 +1012,13 @@ section {
         width: 100%;
         max-width: 100%;
     }
-    .info-cards {
-        margin-top: 40px;
+    .info-cards{
+        grid-template-columns:1fr;
     }
 
-    .info-cards-marquee {
-        mask-image: none;
-        -webkit-mask-image: none;
-    }
-
-    .info-cards-track {
-        animation: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 24px;
-    }
-
-    .info-card-duplicate {
-        display: none;
-    }
-
-    .info-card,
-    .highlights-card {
-        flex: none;
-        width: 100%;
-        max-width: 320px;
-        height: auto;
+    .info-card{
+        width:100%;
+        min-height:auto;
     }
     img {
         max-width: 100%;
