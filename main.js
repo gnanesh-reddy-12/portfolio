@@ -18,7 +18,6 @@ function updateScrollProgress() {
     const scrollTop = window.pageYOffset;
     const scrollPercent = (scrollTop / (docHeight - windowHeight)) * 100;
     
-    // Create progress bar if it doesn't exist
     if (!document.querySelector('.scroll-progress')) {
         const progressBar = document.createElement('div');
         progressBar.className = 'scroll-progress';
@@ -37,18 +36,15 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-            // Stagger animation for list items
             if (entry.target.classList.contains('project-showcase')) {
                 entry.target.style.animation = `fadeInUp 0.8s ease-out ${index * 0.1}s both`;
             }
-            // Stagger animation for skill tags
             if (entry.target.classList.contains('skill-tags')) {
                 const spans = entry.target.querySelectorAll('span');
                 spans.forEach((span, i) => {
                     span.style.animation = `fadeInUp 0.6s ease-out ${i * 0.05}s both`;
                 });
             }
-            // Stagger animation for experience/education items
             if (entry.target.classList.contains('experience-item') || 
                 entry.target.classList.contains('education-item')) {
                 entry.target.style.animation = `fadeInUp 0.8s ease-out ${index * 0.1}s both`;
