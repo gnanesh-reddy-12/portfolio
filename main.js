@@ -1,8 +1,3 @@
-// ============================================
-// SMOOTH SCROLL & MODERN GESTURES
-// ============================================
-
-// Smooth scroll with enhanced animations
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -16,9 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ============================================
-// SCROLL PROGRESS INDICATOR
-// ============================================
+
 function updateScrollProgress() {
     const windowHeight = window.innerHeight;
     const docHeight = document.documentElement.scrollHeight;
@@ -35,9 +28,7 @@ function updateScrollProgress() {
     document.querySelector('.scroll-progress').style.width = scrollPercent + '%';
 }
 
-// ============================================
-// INTERSECTION OBSERVER FOR SCROLL ANIMATIONS
-// ============================================
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -67,14 +58,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements
+
 document.querySelectorAll(
     '.project-showcase, .skill-tags, .experience-item, .education-item, .hidden-left, .hidden-right'
 ).forEach(el => observer.observe(el));
 
-// ============================================
-// PARALLAX EFFECT ON SCROLL
-// ============================================
+
 let ticking = false;
 function updateParallax() {
     const scrolled = window.pageYOffset;
@@ -93,9 +82,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ============================================
-// CURSOR ENHANCEMENT
-// ============================================
+
 document.addEventListener('mousemove', (e) => {
     const buttons = document.querySelectorAll('.resume, .gmail, .social, .project-btn, .contact-btn, .mini-box');
     buttons.forEach(btn => {
@@ -108,15 +95,11 @@ document.addEventListener('mousemove', (e) => {
     });
 });
 
-// ============================================
-// RESUME LINK UPDATE
-// ============================================
+
 document.getElementById("resume-link").href =
 "./files/Gnanesh_Reddy_Resume.pdf?v=" + new Date().getTime();
 
-// ============================================
-// MOBILE MENU FUNCTIONALITY
-// ============================================
+
 const mobileMenu = document.getElementById("mobile-menu");
 const navLinks = document.getElementById("nav-links");
 const menuIcon = mobileMenu.querySelector(".mobile-menu-icon");
@@ -151,9 +134,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     });
 });
 
-// ============================================
-// KEYBOARD SHORTCUTS
-// ============================================
+
 document.addEventListener('keydown', (e) => {
     // Press 'H' to go to home
     if (e.key === 'h' || e.key === 'H') {
@@ -165,9 +146,7 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// ============================================
-// API CALL FUNCTION
-// ============================================
+
 function callData() {  
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then(response => response.json())
@@ -178,9 +157,7 @@ function callData() {
     );
 }
 
-// ============================================
-// PAGE LOAD ANIMATION
-// ============================================
+
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });

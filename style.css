@@ -69,9 +69,6 @@
     }
 }
 
-/* ========================================
-   SCROLL PROGRESS BAR
-   ======================================== */
 .scroll-progress {
     position: fixed;
     top: 0;
@@ -136,7 +133,6 @@ nav {
     pointer-events: auto;
     isolation: isolate;
     overflow: hidden;
-    /* Liquid glass — mostly transparent */
     background:
         linear-gradient(
             180deg,
@@ -158,7 +154,6 @@ nav {
         border-color 0.35s ease;
 }
 
-/* Specular highlight (Apple-style top shine) */
 nav::before {
     content: "";
     position: absolute;
@@ -174,7 +169,6 @@ nav::before {
     z-index: 0;
 }
 
-/* Soft inner glow */
 nav::after {
     content: "";
     position: absolute;
@@ -239,7 +233,6 @@ nav:hover {
     transform: scale(0.97);
 }
 
-/* Smooth enhancement to nav links */
 .nav-links a {
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -503,7 +496,7 @@ section {
     color: rgba(255,255,255,0.92);
     margin-bottom: 25px;
 }
-/* Smooth entrance animations */
+
 .hidden-left,
 .hidden-right {
     opacity: 1;
@@ -545,7 +538,7 @@ section {
 .mini-box i {
     font-size: 22px;
 }
-/* Hover animation */
+
 .mini-box:hover {
     transform: translateY(-8px) scale(1.1);
     background: linear-gradient(
@@ -571,7 +564,7 @@ section {
     object-fit: contain;
     transition: 0.3s ease;
 }
-/* Hover */
+
 .github-icon:hover img,
 .linkedin-icon:hover img,
 .gmail-icon:hover img {
@@ -1120,7 +1113,7 @@ section {
         display: none;
     }
 
-    /* ⚌ hamburger / ✕ close — fixed top-right only */
+    /* ⚌ hamburger/ ✕  close — fixed top-right only */
     .mobile-menu {
         display: flex;
         align-items: center;
@@ -1258,8 +1251,6 @@ section {
 
 }
 
-/* Desktop override: keep hero/about/projects aligned inside a center container */
-/* Desktop override */
 
 .hero {
     height: auto !important;
