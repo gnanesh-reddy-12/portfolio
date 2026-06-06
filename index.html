@@ -1,487 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gnanesh Reddy Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gnanesh Reddy — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-    <button type="button" class="mobile-menu" id="mobile-menu" aria-label="Open menu" aria-expanded="false">
-        <span class="mobile-menu-icon" aria-hidden="true">⚌</span>
+
+<div class="scroll-line" id="scrollLine"></div>
+
+<header id="header">
+  <div class="header-inner">
+    <a href="#home" class="logo">Gnanesh<span class="logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
     </button>
-    <nav>
-<div class="nav-links" id="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-</div>
-</nav>
-    </header>
-    <section id="home" class="hero">
-    <div class="hero-content">
-
-        <!-- Left: Image -->
-        <div class="hero-image">
-            <img src="../images/gnanesh.jpeg" alt="Profile Photo">
-        </div>
-
-        <!-- Right: Text -->
-        <div class="hero-text">
-            <p class="intro">Hi, I'm</p>
-            <h1>Gnanesh Reddy</h1>
-            <h2 class="role">Aspiring Software Developer | Exploring AI/ML
-            Always Learning. Always Building</h2>
-
-            <div class="buttons">
-               <a href="./files/Gnanesh_Reddy_Software_Engineer.pdf?time=<?= time() ?>" class="resume" id="resume-link" target="_blank">
-                <img src="../icons/resume.svg" alt="resume">Resume</a>
-                <a href="mailto:reddygnanesh1205@gmail.com"class="gmail"><img src="../icons/gmail.svg" alt="gmail">Gmail</a>
-            </div>
-            <div class="socials">
-                <a href="https://github.com/gnanesh-reddy-12" class="social github" target="_blank"><img src="../icons/github.svg" alt="github">GitHub</a>
-                <a href="http://www.linkedin.com/in/gnanesh-reddy" class="social linkedin" target="_blank"><img src="../icons/linkedin.svg" alt="linkedin">LinkedIn</a>
-            </div>
-</div>
-</div>
-                                             
-</section>
-
-<section id="about" class="about-section">
-
-<div class="about-layout">
-
-    <!-- LEFT -->
-    <div class="about-text hidden-left">
-
-        <p class="about-small-title">● GET TO KNOW ME</p>
-
-        <h2>About Me</h2>
-
-        <div class="about-line"></div>
-
-        <p class="about-intro">
-            Passionate about building solutions and solving real-world problems.
-        </p>
-
-        <p>
-            I am a Software Engineering graduate with strong knowledge of
-            <strong>Java, Python, SQL</strong> and
-            <strong>full-stack web development.</strong>
-        </p>
-
-        <p>
-            I enjoy building scalable applications and AI-driven solutions
-            that create real impact.
-        </p>
-
-        <div class="mini-links">
-
-            <a href="https://github.com/gnanesh-reddy-12"
-               target="_blank"
-               class="mini-box github-icon">
-                <img src="../icons/github.svg" alt="">
-            </a>
-
-            <a href="https://linkedin.com/in/gnanesh-reddy"
-               target="_blank"
-               class="mini-box linkedin-icon">
-                <img src="../icons/linkedin.svg" alt="">
-            </a>
-
-            <a href="mailto:reddygnanesh1205@gmail.com"
-               class="mini-box gmail-icon">
-                <img src="../icons/gmail.svg" alt="">
-            </a>
-
-        </div>
-
-    </div>
-
-    <!-- RIGHT -->
-    <div class="about-right">
-
-        <div class="skills-section">
-
-            <h3>💻 Skills</h3>
-
-            <div class="skill-tags">
-                <span>Java</span>
-                <span>Python</span>
-                <span>SQL</span>
-                <span>React</span>
-                <span>FastAPI</span>
-                <span>Spring Boot</span>
-                <span>MySQL</span>
-                <span>Docker</span>
-                <span>Git</span>
-                <span>Machine Learning</span>
-                <span>NLP</span>
-            </div>
-
-        </div>
-
-        <div class="about-divider"></div>
-
-        <div class="bottom-sections">
-
-            <div class="highlights-section">
-
-                <h3 class="section-heading">
-                    <span>🏆</span>
-                    Key Highlights
-                </h3>
-
-                <ul>
-                    <li>Built and deployed AI-powered web applications</li>
-                    <li>Developed AI Resume Analyzer using NLP and Gemini AI</li>
-                    <li>Experience with React, FastAPI, Java, Python and SQL</li>
-                    <li>Deployed scalable solutions on Railway and Vercel</li>
-                    <li>Strong foundation in DSA and Software Engineering</li>
-                </ul>
-
-            </div>
-
-            <div class="vertical-divider"></div>
-
-            <div class="doing-section">
-
-                <h3>🚀 What I'm Doing</h3>
-
-                <p>Building modern AI-powered web applications.</p>
-
-                <p>Exploring Machine Learning and NLP.</p>
-
-                <p>Improving backend and cloud deployment skills.</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-    <div class="projects-heading">
-
-        <p class="projects-small-title">● MY WORK</p>
-
-        <h2>Featured Projects</h2>
-
-        <p class="projects-subtitle">
-            A collection of projects focused on solving meaningful
-            real-world problems through software and AI.
-        </p>
-
-    </div>
-
-    <div class="projects-showcase">
-
-        <!-- Project 1 -->
-        <div class="project-showcase">
-
-            <div class="project-left">
-
-                <h3>AI Resume Analyzer</h3>
-
-                <p class="project-tagline">
-                    AI-Powered ATS Resume Screening & Skill Gap Analysis Platform
-                </p>
-
-            </div>
-
-            <div class="project-right">
-
-            <p class="project-description">
-                Developed a full-stack AI-powered ATS Resume Analyzer that parses
-                resumes and compares them against job descriptions using TF-IDF
-                semantic similarity and NLP pipelines. Integrated Gemini AI for
-                intelligent resume improvement suggestions and deployed the platform
-                using FastAPI, Docker, Railway, and Vercel.
-            </p>
-
-                <div class="project-tech">
-                    <span>React.js</span>
-                    <span>FastAPI</span>
-                    <span>Python</span>
-                    <span>NLP</span>
-                    <span>Gemini AI</span>
-                    <span>Docker</span>
-                </div>
-
-                <div class="project-buttons">
-
-                <a href="https://github.com/gnanesh-reddy-12/Ai-Resume-Analyzer"
-                class="project-btn"
-                target="_blank">
-                    GitHub
-                </a>
-
-                <a href="https://ai-resume-analyzer-two-red.vercel.app/"
-                class="project-btn live-btn"
-                target="_blank">
-                    Live Demo
-                </a>
-
-            </div>
-
-            </div>
-
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-showcase">
-
-            <div class="project-left">
-
-                <h3>Smart Income</h3>
-
-                <p class="project-tagline">
-                    AI-Powered Finance & Income Management Platform
-                </p>
-
-            </div>
-
-            <div class="project-right">
-
-            <p class="project-description">
-                Built a finance management platform that helps users track income,
-                expenses, and savings with intelligent analytics dashboards and
-                personalized financial insights.
-            </p>
-
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Flask</span>
-                    <span>SQL</span>
-                    <span>AI/ML</span>
-                </div>
-
-                <div class="project-buttons">
-
-                    <a href="https://github.com/gnanesh-reddy-12/Employee-Salary-Prediction--Internship"
-                    class="project-btn"target="_blank">GitHub
-                    </a>
-
-                    <a href="https://smart-finance-dashboard-seven.vercel.app/"
-                    class="project-btn live-btn"target="_blank">Live Demo
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-showcase">
-
-            <div class="project-left">
-
-                <h3>EcoBid</h3>
-
-                <p class="project-tagline">
-                    Sustainable Online Bidding & Marketplace Platform
-                </p>
-
-            </div>
-
-            <div class="project-right">
-
-                <p class="project-description">
-                    Created a sustainable online bidding marketplace focused on promoting
-                    eco-friendly product exchange and responsible digital commerce
-                    through a modern responsive web experience.
-                </p>
-
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Firebase</span>
-                </div>
-
-                <div class="project-buttons">
-
-                    <a href="https://github.com/gnanesh-reddy-12/EcoBId-AI-Powered-Auction-System"
-                    class="project-btn"target="_blank">GitHub</a>
-
-                    <a href="https://your-live-link.vercel.app"
-                    class="project-btn live-btn"target="_blank">Live Demo
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-showcase">
-
-            <div class="project-left">
-
-                <h3>Wellness Wings - Elderly Care Platform</h3>
-
-                <p class="project-tagline">
-                    Smart Assistance for Elderly Wellness & Care
-                </p>
-
-            </div>
-
-            <div class="project-right">
-
-                <p class="project-description">
-                    Developing a user-friendly platform to connect elderly and physically challenged 
-                    individuals with volunteers for caregiving and hospitality support. 
-                    Aiming to provide reliable assistance.
-                </p>
-
-                <div class="project-tech">
-                    <span>Flutter</span>
-                    <span>Firebase</span>
-                    <span>Dart</span>
-                    <span>Health API</span>
-                </div>
-
-                <div class="project-buttons">
-
-                <a href="https://github.com/gnanesh-reddy-12/Wellness-Wings"
-                    class="project-btn"target="_blank">GitHub
-                </a>
-
-                    <a href="https://your-live-link.vercel.app"
-                    class="project-btn live-btn"target="_blank">Live Demo
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="experience" class="experience">
-
-  <p class="section-tag">EXPERIENCE</p>
-
-  <div class="experience-header">
-    <div>
-      <h2>IBM Virtual Internship</h2>
-      <h3>AICTE & Edunet Foundation</h3>
-    </div>
-
-    <span>Jun 2025 – Jul 2025</span>
   </div>
+</header>
 
-  <p class="role">AI & ML Intern · Remote</p>
+<main>
 
-  <ul>
-    <li>
-      Developed and optimized an Employee Salary Prediction system using Python, scikit-learn, pandas, and Linear Regression, 
-      achieving 90% prediction accuracy and improving salary trend analysis for structured HR datasets.
-    </li>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
 
-    <li>
-      Improved model reliability by performing data preprocessing, feature engineering, and exploratory 
-      data analysis on employee datasets to enhance prediction performance and data quality.
-    </li>
-
-    <li>
-      Designed visualization and evaluation workflows to analyze feature importance, model accuracy, and salary 
-      prediction trends, enabling more data-driven business insights.
-    </li>
-
-    <li>
-      Built scalable machine learning pipelines integrating data cleaning, transformation, testing, and 
-      evaluation workflows to streamline model development processes.
-    </li>
-    <li>
-        Applied AI/ML problem-solving techniques to develop predictive analytics solutions for practical 
-        business and decision-support use cases.
-    </li>
-  </ul>
-
-<div class="skills">
-    <span>Python</span>
-    <span>Pandas</span>
-    <span>Scikit-learn</span>
-    <span>Machine Learning</span>
-  </div>
-
-</section>
-<section id="education" class="education">
-
-  <p class="section-tag">EDUCATION</p>
-
-  <div class="education-item">
-
-    <div class="education-top">
-      <div>
-        <h2>Rajalakshmi Engineering College</h2>
-        <h3>B.Tech in Computer Science and Business Systems</h3>
+      <div class="hero-photo-wrap">
+        <img src="../images/gnanesh.jpeg" alt="Gnanesh Reddy" class="hero-photo">
+        <div class="hero-status">
+          <span class="dot-live"></span> Open to work
+        </div>
       </div>
 
-      <span>Nov 2022 – Apr 2026</span>
-    </div>
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up">Hi, I'm</p>
+        <h1 class="reveal-up">Gnanesh Reddy</h1>
+        <p class="hero-role reveal-up">Aspiring Software Developer &amp; AI/ML Explorer<br>
+        <span class="hero-tagline">Always Learning. Always Building.</span></p>
 
-    <p class="education-location">Chennai, India</p>
+        <div class="hero-actions reveal-up">
+          <a href="./files/Gnanesh_Reddy_Resume.pdf" target="_blank" class="btn-primary">
+            <img src="../icons/resume.svg" alt=""> Resume
+          </a>
+          <a href="mailto:reddygnanesh1205@gmail.com" class="btn-ghost">
+            <img src="../icons/gmail.svg" alt=""> Email Me
+          </a>
+        </div>
 
-  </div>
-
-  <div class="education-item">
-
-    <div class="education-top">
-      <div>
-        <h2>Narayana Junior College</h2>
-        <h3>Higher Secondary School (Class 12)</h3>
+        <div class="hero-socials reveal-up">
+          <a href="https://github.com/gnanesh-reddy-12" target="_blank" class="social-pill">
+            <img src="../icons/github.svg" alt="GitHub"> GitHub
+          </a>
+          <a href="http://www.linkedin.com/in/gnanesh-reddy" target="_blank" class="social-pill">
+            <img src="../icons/linkedin.svg" alt="LinkedIn"> LinkedIn
+          </a>
+        </div>
       </div>
 
-      <span>Oct 2020 – May 2022</span>
     </div>
+  </section>
 
-    <p class="education-location">Tirupati, India</p>
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-label">About Me</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="reveal-up">I build things that make a difference.</h2>
+        <p class="reveal-up">Software Engineering graduate with strong knowledge of <strong>Java, Python, SQL</strong> and full-stack web development. I enjoy building scalable applications and AI-driven solutions that create real impact.</p>
+        <p class="reveal-up">Currently exploring Machine Learning and NLP, deploying production systems on Railway and Vercel.</p>
+      </div>
+      <div class="about-right">
+        <div class="skills-block reveal-up">
+          <p class="block-label">Skills</p>
+          <div class="skill-grid">
+            <span>Java</span><span>Python</span><span>SQL</span><span>React</span>
+            <span>FastAPI</span><span>Spring Boot</span><span>MySQL</span><span>Docker</span>
+            <span>Git</span><span>Machine Learning</span><span>NLP</span><span>Gemini AI</span>
+          </div>
+        </div>
+        <div class="doing-block reveal-up">
+          <p class="block-label">What I'm doing</p>
+          <ul>
+            <li>Building modern AI-powered web applications</li>
+            <li>Exploring Machine Learning and NLP</li>
+            <li>Improving backend and cloud deployment skills</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-label">Featured Projects</div>
+    <p class="section-sub reveal-up">A collection of projects focused on solving meaningful real-world problems.</p>
 
-</section>
-<section id="contact" class="contact">
+    <div class="projects-list">
 
-  <p class="section-tag">CONTACT</p>
+      <div class="project-card reveal-up">
+        <div class="project-card-top">
+          <div>
+            <span class="project-num">01</span>
+            <h3>AI Resume Analyzer</h3>
+            <p class="project-sub-title">ATS Resume Screening &amp; Skill Gap Analysis Platform</p>
+          </div>
+          <div class="project-card-links">
+            <a href="https://github.com/gnanesh-reddy-12/Ai-Resume-Analyzer" target="_blank" class="card-link">GitHub ↗</a>
+            <a href="https://ai-resume-analyzer-two-red.vercel.app/" target="_blank" class="card-link live">Live ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">Full-stack AI platform that parses resumes and compares them against job descriptions using TF-IDF semantic similarity and NLP pipelines. Integrated Gemini AI for intelligent improvement suggestions. Deployed via FastAPI, Docker, Railway, and Vercel.</p>
+        <div class="project-tech">
+          <span>React.js</span><span>FastAPI</span><span>Python</span><span>NLP</span><span>Gemini AI</span><span>Docker</span>
+        </div>
+      </div>
 
-  <h2>Let’s build something meaningful.</h2>
+      <div class="project-card reveal-up">
+        <div class="project-card-top">
+          <div>
+            <span class="project-num">02</span>
+            <h3>Smart Income</h3>
+            <p class="project-sub-title">AI-Powered Finance &amp; Income Management Platform</p>
+          </div>
+          <div class="project-card-links">
+            <a href="https://github.com/gnanesh-reddy-12/Employee-Salary-Prediction--Internship" target="_blank" class="card-link">GitHub ↗</a>
+            <a href="https://smart-finance-dashboard-seven.vercel.app/" target="_blank" class="card-link live">Live ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">Finance management platform for tracking income, expenses, and savings with intelligent analytics dashboards and personalized financial insights powered by ML models.</p>
+        <div class="project-tech">
+          <span>Python</span><span>Flask</span><span>SQL</span><span>AI/ML</span>
+        </div>
+      </div>
 
-  <p class="contact-text">
-    I’m always interested in AI, software engineering,
-    and creative technology collaborations.
-  </p>
+      <div class="project-card reveal-up">
+        <div class="project-card-top">
+          <div>
+            <span class="project-num">03</span>
+            <h3>EcoBid</h3>
+            <p class="project-sub-title">Sustainable Online Bidding &amp; Marketplace</p>
+          </div>
+          <div class="project-card-links">
+            <a href="https://github.com/gnanesh-reddy-12/EcoBId-AI-Powered-Auction-System" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">Sustainable online bidding marketplace promoting eco-friendly product exchange and responsible digital commerce through a modern, responsive web experience.</p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span>
+        </div>
+      </div>
 
-  <div class="contact-links">
+      <div class="project-card reveal-up">
+        <div class="project-card-top">
+          <div>
+            <span class="project-num">04</span>
+            <h3>Wellness Wings</h3>
+            <p class="project-sub-title">Smart Assistance for Elderly Wellness &amp; Care</p>
+          </div>
+          <div class="project-card-links">
+            <a href="https://github.com/gnanesh-reddy-12/Wellness-Wings" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">Platform connecting elderly and physically challenged individuals with volunteers for caregiving support. Built with Flutter and Firebase for cross-platform reliability.</p>
+        <div class="project-tech">
+          <span>Flutter</span><span>Firebase</span><span>Dart</span><span>Health API</span>
+        </div>
+      </div>
 
-    <a href="mailto:reddygnanesh1205@gmail.com"class="gmail"><img src="../icons/gmail.svg" alt="gmail">Gmail</a>
+    </div>
+  </section>
 
-    <a href="http://www.linkedin.com/in/gnanesh-reddy" class="social linkedin" target="_blank"><img src="../icons/linkedin.svg" alt="linkedin">LinkedIn</a>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+    <div class="section-label">Experience</div>
+    <div class="exp-card reveal-up">
+      <div class="exp-header">
+        <div>
+          <h3>AI &amp; ML Intern</h3>
+          <p class="exp-org">IBM Virtual Internship — AICTE &amp; Edunet Foundation</p>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-date">Jun 2025 — Jul 2025</span>
+          <span class="exp-badge">Remote</span>
+        </div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Developed Employee Salary Prediction system using Python, scikit-learn, and Linear Regression — achieving 90% prediction accuracy on structured HR datasets.</li>
+        <li>Performed data preprocessing, feature engineering, and exploratory data analysis to enhance model reliability and data quality.</li>
+        <li>Designed visualization and evaluation workflows to analyze feature importance, model accuracy, and salary prediction trends.</li>
+        <li>Built scalable ML pipelines integrating data cleaning, transformation, testing, and evaluation workflows.</li>
+        <li>Applied AI/ML techniques to develop predictive analytics solutions for practical business use cases.</li>
+      </ul>
+      <div class="exp-tech">
+        <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Machine Learning</span>
+      </div>
+    </div>
+  </section>
 
-    <a href="https://github.com/gnanesh-reddy-12" class="social github" target="_blank"><img src="../icons/github.svg" alt="github">GitHub</a>
+  <!-- EDUCATION -->
+  <section id="education" class="education">
+    <div class="section-label">Education</div>
+    <div class="edu-list">
 
-  </div>
+      <div class="edu-card reveal-up">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <h3>Rajalakshmi Engineering College</h3>
+          <p class="edu-degree">B.Tech in Computer Science and Business Systems</p>
+          <p class="edu-meta">Chennai, India &nbsp;·&nbsp; Nov 2022 – Apr 2026</p>
+        </div>
+      </div>
 
-</section>
+      <div class="edu-card reveal-up">
+        <div class="edu-icon">📚</div>
+        <div class="edu-info">
+          <h3>Narayana Junior College</h3>
+          <p class="edu-degree">Higher Secondary — Class 12</p>
+          <p class="edu-meta">Tirupati, India &nbsp;·&nbsp; Oct 2020 – May 2022</p>
+        </div>
+      </div>
 
-<!-- Link JS -->
-    <script src="main.js"></script>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-label">Let's Connect</div>
+    <h2 class="reveal-up">Interested in AI, software engineering,<br>and creative technology collaborations.</h2>
+    <p class="reveal-up">I'm always open to new opportunities and conversations.</p>
+    <div class="contact-links reveal-up">
+      <a href="mailto:reddygnanesh1205@gmail.com" class="btn-primary">
+        <img src="../icons/gmail.svg" alt=""> reddygnanesh1205@gmail.com
+      </a>
+      <a href="http://www.linkedin.com/in/gnanesh-reddy" target="_blank" class="btn-ghost">
+        <img src="../icons/linkedin.svg" alt=""> LinkedIn
+      </a>
+      <a href="https://github.com/gnanesh-reddy-12" target="_blank" class="btn-ghost">
+        <img src="../icons/github.svg" alt=""> GitHub
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 Gnanesh Reddy · Built with care.</p>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
